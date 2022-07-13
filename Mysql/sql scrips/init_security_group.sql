@@ -1,0 +1,4 @@
+INSERT INTO `security_group` (`security_group_name`, `security_group_description`) VALUES ('guest_user', 'Cuenta de invitado, esta restringido a solo lectura.');
+INSERT INTO `security_group` (`security_group_name`, `security_group_description`) VALUES ('common_user', 'Cuenta de usuario común, con derechos de lectura y escritura limitados.');
+INSERT INTO `security_group` (`security_group_name`, `security_group_description`) VALUES ('administrator_user', 'Usuario administrador, con permisos especiales. Tiene mas acceso al sistema con fines regulatorios.');
+INSERT INTO `security_group` (`security_group_name`, `security_group_description`) VALUES ('super_user', 'Usuario root con acceso total al sistema.');

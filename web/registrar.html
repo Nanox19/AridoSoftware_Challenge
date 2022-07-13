@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/web/style/estilo.css">
+    <link rel="stylesheet" type="text/css" href="/web/style/nav-style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="contenedor-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="registrar.html">Registrar usuario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="usuarios.html">Ver usuarios</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="grupos_de_seguridad.html">Grupos de seguridad</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+        <div class="flex-container">
+            <form class="form" id="formulario">
+                <div class="form__section">
+                    <h1 style="color:#5C5;">REGISTRAR USUARIO</h1>
+                </div>
+                <div class="form__section">
+                    <input type="text" class="form__input" id="user_name" placeholder="Nombre de Usuario">
+                </div> 
+                
+                <div class="form__section">
+                    <input type="password" class="form__input" id="password" placeholder="Contraseña">
+                </div>
+                
+                <div class="form__section select">
+                    <select type="text" class="form__input" id="security_group_name">
+                        <option selected disabled>Seleccione Un Grupo de Seguridad</option>
+                        <option value="guest_user">Invitado</option>
+                        <option value="common_user">Usuario Comun</option>
+                        <option value="administrator_user">Administrador</option>
+                        <option value="super_user">Super Usuario</option>
+
+                    </select>
+                </div>
+
+                <div class="form__section">
+                    <input type="submit" class="form__input" id="Guardar">
+                </div>
+            </form>
+            <div class="form-img">
+                <div class="img-container">
+                    <div>
+                    <img 
+                    src="imagenes/formulario_dark.png" 
+                    alt="fomulario">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex-container">
+            <form class="form" id="formulario_GS">
+                <div class="form__section">
+                    <h1 style="color:#5C5;">Agregar grupo de seguridad a un usuario</h1>
+                </div>
+                <div class="form__section">
+                    <input type="text" class="form__input" id="user_name_GS" placeholder="Nombre de Usuario">
+                </div>           
+                <div class="form__section select">
+                    <select type="text" class="form__input" id="security_group_name_GS">
+                        <option selected disabled>Seleccione Un Grupo de Seguridad</option>
+                        <option value="guest_user">Invitado</option>
+                        <option value="common_user">Usuario Comun</option>
+                        <option value="administrator_user">Administrador</option>
+                        <option value="super_user">Super Usuario</option>
+
+                    </select>
+                </div>
+
+                <div class="form__section">
+                    <input type="submit" class="form__input" id="Guardar_GS">
+                </div>
+            </form>
+            <div class="form-img">
+                <div class="img-container">
+                    <div>
+                    <img 
+                    src="imagenes/agregar.png" 
+                    alt="fomulario">
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+    <!--<script src="./script.js"></script>-->
+
+
+</body>
+
+<script src="js/registrar.js"></script>
+</html>
+
